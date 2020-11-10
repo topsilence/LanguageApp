@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+html {
+    overflow-y: scroll;
+    /* IEへの対応 http://www.htmq.com/style/overflow-y.shtml */
+    /*Internet Explorerが独自に追加したプロパティ*/
+    /*画面に収まりきれなかったときにスクロールして表示することを許可するか否か*/
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+h3 {
+    font-size: 60px;
+    text-align: center;
+}
+
+
+
+.contents-item {
+    float: left;
+    width: 33%;
+
+
+}
+
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 4px;
+}
+
+
+p {
+    font-size: 16px;
+    text-align: left;
+    text-indent: 1.0em;
+    width: 100px;
+
+
+}

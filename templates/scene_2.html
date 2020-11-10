@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<body>
+
+    <header>
+
+        <h3>Shopping</h3>
+        <ul>
+            <li><a class="material-icons" href="/main">chevron_left</a></li>
+        </ul>
+    </header>
+
+    <article>
+        <ul class="menu">
+            <li class="menu__item">
+                <a class="menu__item__link js-menu__item__link" href="">{{word_info[0]}}</a>
+                <ul class="submenu">
+                    <li class="submenu__item">
+                        <input id="btn" type="button" value="talk">
+                        <script>
+                          const btn = document.getElementById("btn");     // ボタンの取得
+                          btn.addEventListener("click", () => {           // ボタンがクリックされたら
+                            const synth = new SpeechSynthesisUtterance(); // 設定を入れるオブジェクト
+                            synth.text   = "{{word_info[1]}}"; // 話す内容
+                            synth.lang   = "ja-JP";   // 言語
+                            synth.rate   = 0.7;       // 速さ
+                            synth.pitch  = 1.0;       // 高さ
+                            synth.volume = 1.0;       // 音量
+                            window.speechSynthesis.speak(synth);          // 話す
+                          });
+                        </script>
+                        <p>{{word_info[1]}}</p>
+                        <p>{{word_info[2]}}</p>
+                    </li>
+
+                </ul>
+            </li>              
+        </ul>
+    </article>
+</body>
+
+{% endblock %}
