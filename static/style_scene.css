@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+html {
+    overflow-y: scroll;
+    /* IEへの対応 http://www.htmq.com/style/overflow-y.shtml */
+    /*Internet Explorerが独自に追加したプロパティ*/
+    /*画面に収まりきれなかったときにスクロールして表示することを許可するか否か*/
+}
+
+header {
+    background-color: #80A6C5;
+    width: 100%;
+
+}
+
+header h3 {
+    width: fit-content;
+    color: #FFFFFF;
+    margin: 0 auto;
+    font-size: 24px;
+    padding-top: 20px;
+}
+
+.material-icons {
+    color: white;
+    padding-left: 10px;
+}
+
+#btn {
+    display: inline-block;
+    border-radius: 20%;
+    /* 角丸       */
+    font-size: 10pt;
+    /* 文字サイズ */
+    text-align: center;
+    /* 文字位置   */
+    cursor: pointer;
+    /* カーソル   */
+    padding: 5px 5px;
+    /* 余白       */
+    background: #6666ff;
+    /* 背景色     */
+    color: #ffffff;
+    /* 文字色     */
+    line-height: 0.3em;
+    /* 1行の高さ  */
+    transition: .3s;
+    /* なめらか変化 */
+    box-shadow: 2px 2px 1px #666666;
+    /* 影の設定 */
+    border: 1px solid #6666ff;
+    /* 枠の指定 */
+    outline: none
+}
+
+#btn:hover {
+    box-shadow: none;
+    /* カーソル時の影消去 */
+    color: #6666ff;
+    /* 背景色     */
+    background: #ffffff;
+    /* 文字色     */
+}
+
+.menu__item {
+    background: #80A6C5;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 1px;
+    position: relative;
+}
+
+.menu__item__link {
+    color: #fff;
+    display: block;
+    padding: 5px;
+}
+
+.submenu {
+    background: #d3e9ff;
+    display: none;
+}
+
+.submenu__item {
+    border-bottom: 1px solid #80A6C5;
+    color: rgb(18, 0, 83);
+    padding: 5px
+}
