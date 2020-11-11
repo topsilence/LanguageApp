@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import os
 # splite3をimportする
 import sqlite3
@@ -8,11 +9,17 @@ app = Flask(__name__)
 
 # Flask では標準で Flask.secret_key を設定すると、sessionを使うことができます。この時、Flask では session の内容を署名付きで Cookie に保存します。
 app.secret_key = 'sunabakoza'
+=======
+from flask import Flask,  render_template, url_for, request
+app = Flask(__name__)
+
+>>>>>>> 97737abb59f4197e6fff6d7e1bd1114cc8daab1b
 
 @app.route('/')
 def index():
     return render_template('index.html')
 
+<<<<<<< HEAD
 @app.route("/main")
 def main():
     return render_template("main.html")
@@ -137,3 +144,13 @@ def notfound404(code):
 if __name__ == "__main__":
     # Flask が持っている開発用サーバーを、実行します。
     app.run(debug=True)
+=======
+
+@app.route("/main")
+def move_main():
+    return render_template("main.html")
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
+>>>>>>> 97737abb59f4197e6fff6d7e1bd1114cc8daab1b
