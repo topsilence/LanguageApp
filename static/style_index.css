@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+html {
+    overflow-y: scroll;
+    /* IEへの対応 http://www.htmq.com/style/overflow-y.shtml */
+    /*Internet Explorerが独自に追加したプロパティ*/
+    /*画面に収まりきれなかったときにスクロールして表示することを許可するか否か*/
+}
+
+
+h1 {
+    color: aqua;
+    text-align: center;
+    font-size: 48px;
+}
+
+h2 {
+    color: gold;
+    text-align: center;
+    font-size: 48px;
+}
+
+h3 {
+    color: black;
+    text-align: center;
+    font-size: 48px;
+}
+
+.button-area {
+    width: 375px;
+    text-align: center;
+
+}
+
+.btn-border {
+    display: inline-block;
+    max-width: 180px;
+    text-align: left;
+    border: 2px solid aqua;
+    font-size: 50px;
+    color: aqua;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: .4s;
+}
+
+.btn-border:hover {
+    background-color: aqua;
+    border-color: aqua;
+    color: #FFF;
+}
+
+
+.footer {
+    text-align: right;
+}

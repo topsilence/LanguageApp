@@ -1,0 +1,359 @@
+@charset "UTF-8";
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 1.5px;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 以上、Chromeのデベロッパーツール無効化 */
+
+
+
+html {
+    overflow-y: scroll;
+    /* IEへの対応 http://www.htmq.com/style/overflow-y.shtml */
+    /*Internet Explorerが独自に追加したプロパティ*/
+    /*画面に収まりきれなかったときにスクロールして表示することを許可するか否か*/
+}
+
+
+/* #btn1,
+#btn2,
+#btn3,
+#btn4,
+#btn5,
+#btn6,
+#btn7,
+#btn8,
+#btn9,
+#btn10,
+#btn11,
+#btn12,
+#btn13,
+#btn14,
+#btn15,
+#btn16,
+#btn17,
+#btn18,
+#btn19,
+#btn20,
+#btn21,
+#btn22,
+#btn23,
+#btn24,
+#btn25,
+#btn26,
+#btn27,
+#btn28,
+#btn29,
+#btn30,
+#btn31,
+#btn32,
+#btn33,
+#btn34,
+#btn35,
+#btn36,
+#btn37,
+#btn38,
+#btn39,
+#btn40,
+#btn41,
+#btn42,
+#btn43,
+#btn44,
+#btn45,
+#btn46,
+#btn47,
+#btn48,
+#btn49,
+#btn50,
+#btn51,
+#btn52,
+#btn53,
+#btn54,
+#btn55 */
+input[type="button"] {
+    display: inline-block;
+    border-radius: 20%;
+    /* 角丸       */
+    font-size: 10pt;
+    /* 文字サイズ */
+    text-align: center;
+    /* 文字位置   */
+    cursor: pointer;
+    /* カーソル   */
+    padding: 5px 5px;
+    /* 余白       */
+    background: #6666ff;
+    /* 背景色     */
+    color: #ffffff;
+    /* 文字色     */
+    line-height: 0.3em;
+    /* 1行の高さ  */
+    transition: .3s;
+    /* なめらか変化 */
+    box-shadow: 2px 2px 1px #666666;
+    /* 影の設定 */
+    border: 1px solid #6666ff;
+    /* 枠の指定 */
+    outline: none;
+
+    margin: 3px;
+}
+
+/* #btn1:hover,
+#btn2:hover,
+#btn3:hover,
+#btn4:hover,
+#btn5:hover,
+#btn6:hover,
+#btn7:hover,
+#btn8:hover,
+#btn9:hover,
+#btn10:hover,
+#btn11:hover,
+#btn12:hover,
+#btn13:hover,
+#btn14:hover,
+#btn15:hover,
+#btn16:hover,
+#btn17:hover,
+#btn18:hover,
+#btn19:hover,
+#btn20:hover,
+#btn21:hover,
+#btn22:hover,
+#btn23:hover,
+#btn24:hover,
+#btn25:hover,
+#btn26:hover,
+#btn27:hover,
+#btn28:hover,
+#btn29:hover,
+#btn30:hover,
+#btn31:hover,
+#btn32:hover,
+#btn33:hover,
+#btn34:hover,
+#btn35:hover,
+#btn36:hover,
+#btn37:hover,
+#btn38:hover,
+#btn39:hover,
+#btn40:hover,
+#btn41:hover,
+#btn42:hover,
+#btn43:hover,
+#btn44:hover,
+#btn45:hover,
+#btn46:hover,
+#btn47:hover,
+#btn48:hover,
+#btn49:hover,
+#btn50:hover,
+#btn51:hover,
+#btn52:hover,
+#btn53:hover,
+#btn54:hover,
+#btn55 */
+input[type="button"]:hover {
+    box-shadow: none;
+    /* カーソル時の影消去 */
+    color: #6666ff;
+    /* 背景色     */
+    background: #ffffff;
+    /* 文字色     */
+}
+
+header {
+    background-color: #80A6C5;
+    width: 100%;
+
+}
+
+header h3 {
+    width: fit-content;
+    color: white;
+    margin: 0 auto;
+    font-size: 24px;
+    padding-top: 20px;
+}
+
+.material-icons {
+    color: white;
+    padding-left: 10px;
+}
+
+.menu__item {
+    background: #d3e9ff;
+    color: white;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 1px;
+    position: relative;
+    border-bottom-color: #22669e;
+}
+
+.menu__item__link {
+    color: rgb(0, 44, 126);
+    display: block;
+    padding: 18px;
+    font-size: 20px;
+}
+
+.submenu {
+    background: #80A6C5;
+    display: none;
+}
+
+.submenu__item {
+    border-bottom: 1px solid #d3e9ff;
+    color: white;
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-bottom: 8px;
+    font-size: 18px;
+}
+
+p {
+    padding: 5px;
+}
+
+.emergency {
+    text-align: center;
+    padding-top: 5px;
+    color: white;
+
+
+}
